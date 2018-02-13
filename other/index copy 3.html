@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Rajiv's 2017 in photos A</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--   <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+ -->
+  <style>
+
+    body {
+      font-family: "Arial Rounded MT Bold";
+    }
+    h3 {
+      color: red;
+    }
+    img {
+      height: 230px;
+    }
+    img:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
+
+    /* FLEXBOX */
+
+    .flex-container-1 {
+      display: flex;
+      flex-wrap: wrap;
+      /* background-color: black; */
+    }
+    .flex-container-2 {   /* exactly same as flex-container-1, but makes '.flex-container-2 > img' (below) work */
+      display: flex;      /* otherwise every 'img' class has to be changed */
+      flex-wrap: wrap;
+    }
+    .flex-container-1 > img {   /* 'img' class that is child of 'flex-container' */
+      /*height: 230px;*/
+      padding: 3px;
+    /*  background-color: #f1f1f1; */
+    }
+    .flex-container-2 > img {
+      /*height: 230px;*/
+      padding: 0;
+    }
+
+    /* BUTTONS */
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px;
+      width: 250px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      /*float: right;*/
+    }
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    .button:hover span {
+      padding-right: 25px;
+    }
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Rajiv's 2017 photos A</h1>
+
+  <button class="button" onclick="buttonPadding()">
+    Toggle Grid Padding
+  </button>
+
+  <h3 id="legend">.</h3>
+
+  <!-- IMAGES -->
+
+  <div id="grid" class="flex-container-1">
+    <img src="images/2017-05-15 20.34.16_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" title="Dinner at Cote's, Bishop's Stortford (May 5)">
+    <img src="images/2017-05-16 09.49.19_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" class="class_of_div" title="Aunt Lydia's living room, Bishop's Stortford (May 5)" onclick="window.open(this.src)">
+    <img src="images/2017-05-16 11.11.50_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" class="class_of_div" title="Dinner" onclick="window.open(this.src)">
+    <img src="images/2017-05-16 12.54.49_B.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-16 14.30.10_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-16 16.39.30_Ac.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-17 11.27.35_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-17 12.27.15_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-17 13.12.08_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-17 13.26.20_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-17 14.54.42_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-17 18.59.15_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-17 20.31.12_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-18 10.08.56_A.jpg" onclick="window.open(this.src)">
+    <img src="images/2017-05-18 10.16.49_Ac.jpg" onclick="window.open(this.src)">
+  </div>
+
+  <script>
+
+    // Toggle grid padding
+
+    function buttonPadding() {
+      var x = document.getElementById("grid");
+      if (x.className === "flex-container-1") {
+        x.className = "flex-container-2";
+      } else {
+        x.className = x.className.replace("flex-container-2", "flex-container-1");
+      }
+    }
+
+    // $(document).on('mouseover', '.class_of_div', function () {
+    //            var thiss=$(this);
+    //            $('#legend').text(thiss.attr('title'));
+    //        });
+
+    function mouseOver(x) {
+            document.getElementById("legend").innerHTML = x.title;
+        }
+    function mouseOut() {
+        document.getElementById("legend").innerHTML = ".";
+    }
+
+  </script>
+
+</body>
+
+</html>
