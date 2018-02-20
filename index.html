@@ -3,10 +3,18 @@
 
 <head>
 
-  <title>Rajiv's photos (2017)</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="Rajiv Shankar">
+  <meta name="description" content="Photo album with simple html, css, and JS only.
+      All in one html doc only, no external css or JS docs.
+      No bootstrap, no jquery, no nothin'.
+      Meant to show how much can be created with just basic code.">
+
+  <title>Rajiv's photos (2017)</title>
+  <link rel="icon" href="images/favicon.ico">
 
   <style>
 
@@ -31,7 +39,6 @@
         opacity: 0.7;
         filter: alpha(opacity=70);  /* For IE8 and earlier */
     }
-
     navbar {              /* top bar which dispalys title and photo legends */
       overflow: hidden;
       background-color: yellow;
@@ -40,7 +47,6 @@
       top: 0;
       width: 100%;
       z-index: 1;         /* keeps on top */
-
     }
     .main {
       /*padding: 16px;*/
@@ -49,12 +55,11 @@
     }
 
     /* FLEXBOX */
-
     .flex-container-1 {
       padding-top: 3px;
       display: flex;
       flex-wrap: wrap;
-      background-color: black;
+      background-color: white;
     }
     .flex-container-2 {   /* exactly same as flex-container-1, but makes '.flex-container-2 > img' (below) work */
       display: flex;      /* otherwise every 'img' class has to be changed */
@@ -78,8 +83,7 @@
 
   <navbar>
     <h1>Rajiv's photos (2017)</h1>
-
-    <h2 id="legend">&nbsp;></h2>
+    <h2 id="legend">&nbsp;</h2>
   </navbar>
 
   <div class="main">
@@ -90,7 +94,7 @@
 
   <div id="grid" class="flex-container-1">
     <img src="images/2017-05-15 20.34.16_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" alt="Dinner at Cote's, Bishop's Stortford (May 5)">
-    <img src="images/2017-05-16 09.49.19_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" alt="Jai in Aunt Lydia's living room, Bishop's Stortford (May 6)" onclick="window.open(this.src)">
+    <img src="images/2017-05-16 09.49.19_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" alt="Jai in Aunt Lydia's living room, Bishop's Stortford (May 6)">
     <img src="images/2017-05-16 11.11.50_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" alt="Bishop's Stortford (May 6)">
     <img src="images/2017-05-16 12.54.49_B.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" alt="Jai & Shumu at Three Bells, Bishop's Stortford (May 6)">
     <img src="images/2017-05-16 14.30.10_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()"  onclick="window.open(this.src)" alt="Jai & Aunt Lydia at Three Horsemen, Bishop's Stortford (May 6)">
