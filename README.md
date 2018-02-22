@@ -10,5 +10,5 @@ To show how much can be created with just basic code.
 
 This is a website for displaying my photos mostly to those who do not use social media, like Facebook or Instagram.<br>
 It is also meant for those with barebones internet access around the globe (so no bootstrap, jquery, etc.).<br>
-This "website" can also be easily displayed on my laptop when I travel (without internet).
-(Only a small sample of ohotos are shown.)
+This "website" can also be easily displayed on my laptop when I travel (without internet).<br>
+(Only a small sample of photos are shown.)
