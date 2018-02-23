@@ -23,13 +23,15 @@
       margin: 0;
     }
     h1 {
-      color: blue;
+      color: darkblue;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
     }
-    h2 {
+    .section {
+      color: blue;
+    }
+    .caption {
       color: red;
-      text-align: center;
       padding: 0 0 20px 0;
     }
     img {
@@ -39,7 +41,7 @@
         opacity: 0.7;
         filter: alpha(opacity=70);  /* For IE8 and earlier */
     }
-    navbar {              /* top bar which dispalys title and photo legends */
+    navbar {              /* top bar which dispalys title and photo captions */
       overflow: hidden;
       background-color: yellow;
       opacity: 0.9;       /* adds character to navbar when scrolling */
@@ -83,42 +85,49 @@
 
   <navbar>
     <h1>Rajiv's photos (2017)</h1>
-    <h2 id="legend">&nbsp;</h2>
+    <h1 class="caption" id="caption">&nbsp;</h1>
   </navbar>
 
   <div class="main">
 
-  <!-- IMAGES -->
+    <!-- IMAGES -->
 
-  <h1>England (May 15 - May 21)</h1>
+    <h1 class="section">England (May 15 - May 21)</h1>
 
-  <div id="grid" class="flex-container-1">
-    <img src="images/2017-05-15 20.34.16_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Aunt Lydia & Jai at Côte Brasserie, Bishop's Stortford (May 15)">
-    <img src="images/2017-05-16 09.49.19_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai in Aunt Lydia's living room, Bishop's Stortford (May 16)">
-    <img src="images/2017-05-16 11.11.50_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="High Street, Bishop's Stortford (May 16)">
-    <img src="images/2017-05-16 12.54.49_B.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai & Shumu at The Star, Bishops Stortford (May 16)">
-    <img src="images/2017-05-16 14.30.10_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Aunt Lydia & Jai at Three Horseshoes, Bishops Stortford (May 16)">
-    <img src="images/2017-05-16 16.39.30_Ac.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Aunt Lydia & Jai in her living room, Bishop's Stortford (May 16)">
-    <img src="images/2017-05-17 11.27.35_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Cathedral (May 17)">
-    <img src="images/2017-05-17 12.27.15_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Elm Hill, Norwich (May 17)">
-    <img src="images/2017-05-17 13.12.08_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Market (May 17)">
-    <img src="images/2017-05-17 13.26.20_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Castle (May 17)">
-    <img src="images/2017-05-17 14.54.42_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="St Benedicts Street, Norwich (May 17)">
-    <img src="images/2017-05-17 18.59.15_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai at The Plough, Norwich (May 17)">
-    <img src="images/2017-05-17 20.31.12_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai & Kate at Farmyard, Norwich (May 17)">
-    <img src="images/2017-05-18 10.08.56_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Station (May 18)">
-    <img src="images/2017-05-18 10.16.49_Ac.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="">
-  </div>
+    <div id="grid" class="flex-container-1">
+      <img src="images/2017-05-15 20.34.16_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Aunt Lydia & Jai at Côte Brasserie, Bishop's Stortford (May 15)">
+      <img src="images/2017-05-16 09.49.19_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai in Aunt Lydia's living room, Bishop's Stortford (May 16)">
+      <img src="images/2017-05-16 11.11.50_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="High Street, Bishop's Stortford (May 16)">
+      <img src="images/2017-05-16 12.54.49_B.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai & Shumu at The Star, Bishops Stortford (May 16)">
+      <img src="images/2017-05-16 14.30.10_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Aunt Lydia & Jai at Three Horseshoes, Bishops Stortford (May 16)">
+      <img src="images/2017-05-16 16.39.30_Ac.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Aunt Lydia & Jai in her living room, Bishop's Stortford (May 16)">
+      <img src="images/2017-05-17 11.27.35_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Cathedral (May 17)">
+      <img src="images/2017-05-17 12.27.15_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Elm Hill, Norwich (May 17)">
+      <img src="images/2017-05-17 13.12.08_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Market (May 17)">
+      <img src="images/2017-05-17 13.26.20_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Castle (May 17)">
+      <img src="images/2017-05-17 14.54.42_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="St Benedicts Street, Norwich (May 17)">
+      <img src="images/2017-05-17 18.59.15_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai at The Plough, Norwich (May 17)">
+      <img src="images/2017-05-17 20.31.12_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Jai & Kate at Farmyard, Norwich (May 17)">
+      <img src="images/2017-05-18 10.08.56_A.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Norwich Station (May 18)">
+    </div>
+
+    <h1 class="section">India (May 22 - May 29)</h1>
+
+    <div id="grid" class="flex-container-1">
+      <img src="images/2017-05-24 07.52.01_Ac.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Dhakuria Lake, Calcutta (May 24)">
+      <img src="images/2017-05-24 08.21.30c.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Roadside fruit seller, Calcutta (May 24)">
+      <img src="images/2017-05-26 12.09.23c.jpg" onmouseover="mouseOver(this)" onmouseout="mouseOut()" onclick="window.open(this.src)"  alt="Lake Market, Calcutta (May 26)">
+    </div>
 
   </div>
 
   <script>
-    // Display title on & off
+    // Display caption on & off
     function mouseOver(x) {
-            document.getElementById("legend").innerHTML = x.alt;
+            document.getElementById("caption").innerHTML = x.alt;
         }
     function mouseOut() {
-        document.getElementById("legend").innerHTML = "&nbsp;";
+        document.getElementById("caption").innerHTML = "&nbsp;";
     }
 
   </script>
