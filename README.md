@@ -6,6 +6,11 @@ All in one html file only, with no external css or JS files.<br>
 No bootstrap, no jquery, no nothin'.<br>
 To show how much can be created with just basic code.
 
+<p align="center">
+  <img src="/images/album_screenshot.png" alt="Photo album screenshot"
+       width="654" height="377">
+</p>
+
 ## Why this
 
 This is a website for displaying my photos mostly to those who do not use social media, like Facebook or Instagram.<br>
