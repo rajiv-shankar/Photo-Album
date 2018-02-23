@@ -25,4 +25,4 @@ Photos & captions can be added/removed easily (just add photo to 'images' folder
 
 ## The Album
 
-[See it here](https://cdn.rawgit.com/rajiv-shankar/Photo-Album/706807d2/index.html)
+[See it here](http://htmlpreview.github.io/?https://github.com/rajiv-shankar/Photo-Album/blob/master/index.html)
