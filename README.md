@@ -11,6 +11,8 @@ To show how much can be created with just basic code.
        width="654" height="377">
 </p>
 
+Photo legend changes on hover and photo opens on clicking.
+
 ## Why this
 
 This is a website for displaying my photos mostly to those who do not use social media, like Facebook or Instagram.<br>
