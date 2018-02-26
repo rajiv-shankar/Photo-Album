@@ -19,10 +19,10 @@ This is a website for displaying my photos mostly to those who do not use social
 and who will not download any app to view an album either (yes, they still exist!). <br>
 It is also meant for those with barebones internet access around the globe (so no bootstrap, jquery, etc.).<br>
 Dual purpose:<br>
-This "website" can also be easily displayed on my laptop &mdash; just as a photo album &mdash; when I travel (without internet).<br>
+This "website" can also be easily displayed on my laptop &mdash; just as a photo album (without internet) &mdash; when I travel.<br>
 Photos & captions can be added/removed easily (just add photo to 'images' folder and add line with caption in html).<br>
 (Only a small sample of photos are shown.)
 
 ## The Album
 
-[See it here](http://htmlpreview.github.io/?https://github.com/rajiv-shankar/Photo-Album/blob/master/index.html)
+[See it here](http://htmlpreview.github.io/?https://github.com/rajiv-shankar/Photo-Album/blob/master/index.html){:target="_blank"}
